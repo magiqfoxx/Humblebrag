@@ -1,0 +1,21 @@
+//SCREEN SIZES
+$max-small-screen: 600px;
+$max-medium-screen: 900px;
+$max-big-screen: 1200px;
+$max-giant-screen: 1800px;
+
+//FONTS
+html {
+  @media (max-width: $max-giant-screen) {
+    font-size: 140%;
+  }
+  @media (max-width: $max-big-screen) {
+    font-size: 130%;
+  }
+  @media (max-width: $max-medium-screen) {
+    font-size: 120%;
+  }
+  @media (max-width: $max-small-screen) {
+    font-size: 16px;
+  }
+}

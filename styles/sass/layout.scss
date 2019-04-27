@@ -1,0 +1,326 @@
+$primary-color: #048998;
+$secondary-color: #3bb4c1;
+$dark-gray: #e9e4e6;
+$light-gray: rgb(244, 242, 242);
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+h2 {
+  font-size: 1.5rem;
+  color: $primary-color;
+}
+h3 {
+  color: $secondary-color;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.humblebrag--button {
+  border: none;
+  border-radius: 0;
+  width: 5rem;
+  height: 1.5rem;
+  margin: 0 1rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  &:active {
+    transform: translateX(2px) translateY(2px);
+  }
+}
+.button__primary {
+  background-color: $secondary-color;
+  color: white;
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+#humblebrag--nav {
+  height: 2rem;
+  padding: 0.3rem 1rem;
+  text-align: right;
+  color: $primary-color;
+  &:hover {
+    font-weight: bold;
+  }
+}
+#humblebrag--title {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../img/samson-creative-91091-unsplash.jpg");
+  padding: 3rem 4rem;
+  .button__secondary {
+    background-color: transparent;
+    border: 2px solid $secondary-color;
+    color: black;
+    &:hover {
+      background-color: $secondary-color;
+      color: white;
+    }
+  }
+}
+#humblebrag--slates {
+  background-color: white;
+  padding: 2rem;
+  padding-bottom: 5rem;
+
+  .slates--wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .humblebrag--slate {
+      background-color: rgba($dark-gray, 0.5);
+      width: min-content;
+      margin: 1rem 2rem;
+      padding: 2rem 1rem;
+      min-width: 300px;
+      text-align: center;
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+      .slate--img {
+        max-width: 80px;
+      }
+      .slate--title {
+        color: $primary-color;
+        font-weight: bold;
+      }
+      .slate--text {
+        color: #707070;
+      }
+      .slate--button {
+        width: 90%;
+        height: 19%;
+        margin: 1rem 0rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+#humblebrag--break {
+  background-image: url("../img/grillot-edouard-758840-unsplash.jpg");
+  height: 8rem;
+  z-index: -1;
+  padding: 2rem;
+  .break--quote {
+    position: relative;
+    top: -3rem;
+    height: calc(8rem + 2rem);
+    z-index: 1;
+    background-color: $primary-color;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+#humblebrag--team {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $light-gray;
+  padding: 3rem 0rem;
+  text-align: center;
+  .team--wrapper {
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    //to make the wrapper component smaller than children
+    padding: 0rem 2rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    height: 52rem;
+    @media (min-width: 640px) {
+      height: 32rem;
+    }
+    @media (min-width: 1040px) {
+      height: 10rem;
+    }
+    .team--slate {
+      background-color: rgba($dark-gray, 0.9);
+      margin: 0.3rem;
+      padding: 0.5rem 0rem;
+      border-top: 4px solid white;
+      border-right: 4px solid $primary-color;
+      text-align: right;
+      min-height: 10rem;
+      min-width: 200px;
+      max-width: 80vw;
+      width: 14rem;
+      height: 20rem;
+      //to offset in regards to parent components
+      position: relative;
+      top: -6rem;
+      .team--slate--img {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+        height: 40%;
+        object-fit: cover;
+      }
+      .team--slate--name {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin: 1rem;
+      }
+      .team--slate--text {
+        color: #707070;
+        font-size: 0.8rem;
+        margin: 1rem;
+      }
+    }
+    .slate1 {
+      order: 2;
+    }
+    .slate2 {
+      order: 1;
+    }
+    .slate3 {
+      order: 3;
+    }
+    @media (min-width: 530px) {
+      .slate1 {
+        order: 1;
+      }
+      .slate2 {
+        order: 3;
+      }
+      .slate3 {
+        order: 2;
+      }
+    }
+    @media (min-width: 1040px) {
+      .slate1 {
+        order: 1;
+      }
+      .slate2 {
+        order: 2;
+      }
+      .slate3 {
+        order: 3;
+      }
+    }
+    .team--slate__main {
+      background-color: $dark-gray;
+      position: relative;
+      top: -7rem;
+      height: 22rem;
+      width: 16rem;
+      @media (min-width: 530px) {
+        top: -6rem;
+      }
+    }
+  }
+  .team--button {
+    background-color: $secondary-color;
+    color: white;
+    width: 12rem;
+    height: 2rem;
+    font-size: 1rem;
+    align-self: center;
+  }
+}
+#humblebrag--testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  .testimonials--left {
+    width: 50%;
+    max-width: 80vw;
+    min-width: 300px;
+    object-fit: cover;
+    height: 100%;
+  }
+  .testimonials--right {
+    width: 50%;
+    max-width: 80vw;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .testimonials--box {
+      width: 80%;
+      background-color: $secondary-color;
+      display: grid;
+      grid-template-areas:
+        "person1 person1 person2 person2"
+        ". person3 person3 ."
+        "quote quote quote quote";
+      justify-items: center;
+      .testimonials--box--person {
+        width: 6rem;
+        height: 6rem;
+        text-align: center;
+        color: white;
+        .testimonials--box--person--img {
+          //to fit the name in the grid cell too
+          width: calc(100% - 2rem);
+          height: calc(100% - 2rem);
+          object-fit: cover;
+          border-radius: 10rem;
+        }
+      }
+      .person1 {
+        grid-area: person1;
+        margin-top: 1rem;
+      }
+      .person2 {
+        grid-area: person2;
+        margin-top: 1rem;
+      }
+      .person3 {
+        grid-area: person3;
+        margin-bottom: 1rem;
+      }
+      .testimonials--box--quote {
+        grid-area: quote;
+        background-color: $primary-color;
+        padding: 1rem 2rem;
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+#humblebrag--form {
+  height: 80vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../img/joel-filipe-246260-unsplash.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form--box {
+    background-color: $primary-color;
+    min-width: 300px;
+    max-width: 80vw;
+    height: 60%;
+    width: 50%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      width: 7rem;
+      height: 1rem;
+      margin: 1rem;
+    }
+  }
+}
+#humblebrag--footer {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+}
