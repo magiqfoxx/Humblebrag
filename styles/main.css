@@ -10,11 +10,11 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  color: #048998;
+  color: var(--primary-color);
 }
 
 h3 {
-  color: #3bb4c1;
+  color: var(--secondary-color);
   text-align: center;
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -36,22 +36,22 @@ h3 {
 }
 
 .button__primary {
-  background-color: #3bb4c1;
+  background-color: var(--secondary-color);
   color: white;
 }
 
 .button__primary:hover {
-  background-color: #048998;
+  background-color: var(--primary-color);
 }
 
 #humblebrag--nav {
-  height: 2rem;
+  min-height: 2rem;
   padding: 0.3rem 1rem;
   text-align: right;
-  color: #048998;
+  color: var(--primary-color);
 }
 
-#humblebrag--nav:hover {
+#humblebrag--nav .nav--link::hover {
   font-weight: bold;
 }
 
@@ -63,12 +63,12 @@ h3 {
 
 #humblebrag--title .button__secondary {
   background-color: transparent;
-  border: 2px solid #3bb4c1;
+  border: 2px solid var(--secondary-color);
   color: black;
 }
 
 #humblebrag--title .button__secondary:hover {
-  background-color: #3bb4c1;
+  background-color: var(--secondary-color);
   color: white;
 }
 
@@ -107,7 +107,7 @@ h3 {
 }
 
 #humblebrag--slates .slates--wrapper .humblebrag--slate .slate--title {
-  color: #048998;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -134,7 +134,7 @@ h3 {
   top: -3rem;
   height: calc(8rem + 2rem);
   z-index: 1;
-  background-color: #048998;
+  background-color: var(--primary-color);
   color: white;
   padding: 2rem;
   text-align: center;
@@ -152,13 +152,13 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f4f2f2;
+  background-color: var(--light-gray);
   padding: 3rem 0rem;
   text-align: center;
 }
 
 #humblebrag--team .team--wrapper {
-  background-color: #3bb4c1;
+  background-color: var(--secondary-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +190,7 @@ h3 {
   margin: 0.3rem;
   padding: 0.5rem 0rem;
   border-top: 4px solid white;
-  border-right: 4px solid #048998;
+  border-right: 4px solid var(--primary-color);
   text-align: right;
   min-height: 10rem;
   min-width: 200px;
@@ -210,7 +210,7 @@ h3 {
 }
 
 #humblebrag--team .team--wrapper .team--slate .team--slate--name {
-  color: #048998;
+  color: var(--primary-color);
   font-weight: bold;
   font-size: 1.2rem;
   margin: 1rem;
@@ -277,7 +277,7 @@ h3 {
 }
 
 #humblebrag--team .team--wrapper .team--slate__main {
-  background-color: #e9e4e6;
+  background-color: var(--dark-gray);
   position: relative;
   top: -7rem;
   height: 22rem;
@@ -291,7 +291,7 @@ h3 {
 }
 
 #humblebrag--team .team--button {
-  background-color: #3bb4c1;
+  background-color: var(--secondary-color);
   color: white;
   width: 12rem;
   height: 2rem;
@@ -339,11 +339,11 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem;
 }
 
 #humblebrag--testimonials .testimonials--right .testimonials--box {
-  width: 80%;
-  background-color: #3bb4c1;
+  background-color: var(--secondary-color);
   display: -ms-grid;
   display: grid;
       grid-template-areas: "person1 person1 person2 person2" ". person3 person3 ." "quote quote quote quote";
@@ -394,7 +394,7 @@ h3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: quote;
-  background-color: #048998;
+  background-color: var(--primary-color);
   padding: 1rem 2rem;
   color: white;
   font-weight: bold;
@@ -416,7 +416,7 @@ h3 {
 }
 
 #humblebrag--form .form--box {
-  background-color: #048998;
+  background-color: var(--primary-color);
   min-width: 300px;
   max-width: 80vw;
   height: 60%;
@@ -444,7 +444,7 @@ h3 {
 }
 
 #humblebrag--footer {
-  background-color: #048998;
+  background-color: var(--primary-color);
   color: white;
   border: none;
 }
@@ -456,6 +456,13 @@ h3 {
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+:root {
+  --primary-color: #048998;
+  --secondary-color: #3bb4c1;
+  --dark-gray: #e9e4e6;
+  --light-gray: rgb(244, 242, 242);
 }
 
 html {
@@ -474,6 +481,10 @@ section {
   width: 100vw;
   background-position: center;
   background-size: cover;
+}
+
+button {
+  cursor: pointer;
 }
 
 @media (max-width: 1800px) {

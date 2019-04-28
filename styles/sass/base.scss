@@ -5,7 +5,12 @@
   padding: 0;
   box-sizing: inherit;
 }
-
+:root {
+  --primary-color: #048998;
+  --secondary-color: #3bb4c1;
+  --dark-gray: #e9e4e6;
+  --light-gray: rgb(244, 242, 242);
+}
 html {
   font-size: 62.5%;
   font-family: "Open Sans Condensed", sans-serif;
@@ -20,4 +25,7 @@ section {
   width: 100vw;
   background-position: center;
   background-size: cover;
+}
+button {
+  cursor: pointer;
 }
