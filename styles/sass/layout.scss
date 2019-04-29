@@ -111,8 +111,12 @@ h3 {
     z-index: 1;
     background-color: var(--primary-color);
     color: white;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 #humblebrag--team {
@@ -121,7 +125,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   background-color: var(--light-gray);
-  padding: 3rem 0rem;
+  padding: 4rem 0rem;
   text-align: center;
   .team--wrapper {
     background-color: var(--secondary-color);
@@ -209,9 +213,6 @@ h3 {
       top: -7rem;
       height: 22rem;
       width: 16rem;
-      @media (min-width: 530px) {
-        top: -6rem;
-      }
     }
   }
   .team--button {

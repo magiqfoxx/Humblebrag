@@ -26,12 +26,19 @@ h2 {
           justify-content: space-between;
   text-align: center;
   z-index: 10;
+  border-bottom: 1px solid black;
+}
+
+#humblebrag--nav .nav--link:hover {
+  color: var(--secondary-color);
 }
 
 #humblebrag--nav .nav--text {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  text-align: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  color: #707070;
 }
 
 .humblebrag--slate {
@@ -58,13 +65,16 @@ h2 {
           box-shadow: 2px 3px 5px #636363;
 }
 
-.break--quote--button {
+.break--quote {
+  font-size: 0.8rem;
+}
+
+.break--quote .break--quote--button {
   width: 7rem;
   height: 2rem;
   margin: 1rem;
   background-color: var(--secondary-color);
   color: white;
-  font-size: 0.8rem;
 }
 
 .testimonials--left {
@@ -109,16 +119,7 @@ h2 {
   margin: 0 auto;
 }
 
-#humblebrag--testimonials .testimonials--right .testimonials--box .testimonials--box--person .testimonials--box--person--img:hover .testimonials--box--person--img::after {
-  background-color: var(--shade);
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "Hello";
-  width: 100%;
-  height: 100%;
-  border-radius: 10rem;
+#humblebrag--testimonials .testimonials--right .testimonials--box .testimonials--box--person .testimonials--box--person--img:hover .testimonials--box--person__hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,5 +141,38 @@ h2 {
   width: 100%;
   height: 100%;
   border-radius: 10rem;
+}
+
+#humblebrag--form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#humblebrag--form .form--box input {
+  width: 50%;
+}
+
+#humblebrag--form .form--box .humblebrag--button {
+  background-color: var(--secondary-color);
+  color: white;
+  width: 50%;
+  height: 2rem;
+}
+
+#humblebrag--footer {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+#humblebrag--footer hr {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#humblebrag--footer .footer--disclaimer {
+  color: var(--secondary-color);
 }
 /*# sourceMappingURL=101.css.map */

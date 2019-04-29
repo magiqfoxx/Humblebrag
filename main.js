@@ -13,7 +13,7 @@ function changeColors2() {
 function changeColors3() {
   document.documentElement.style.setProperty("--primary-color", "#305f72");
   document.documentElement.style.setProperty("--secondary-color", "#f18c8e");
-  document.documentElement.style.setProperty("--light-gray", "#f1d1b58c");
+  document.documentElement.style.setProperty("--light-gray", "#ffeedf");
   document.documentElement.style.setProperty("--dark-gray", "#f1d1b5");
 }
 //
