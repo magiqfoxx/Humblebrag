@@ -127,14 +127,9 @@ h2 {
 #humblebrag--form {
   flex-direction: column;
   .form--box {
+    width: 50%;
     input {
       width: 50%;
-    }
-    .humblebrag--button {
-      background-color: var(--secondary-color);
-      color: white;
-      width: 50%;
-      height: 2rem;
     }
   }
 }

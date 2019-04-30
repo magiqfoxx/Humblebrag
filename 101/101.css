@@ -162,15 +162,12 @@ h2 {
           flex-direction: column;
 }
 
-#humblebrag--form .form--box input {
+#humblebrag--form .form--box {
   width: 50%;
 }
 
-#humblebrag--form .form--box .humblebrag--button {
-  background-color: var(--secondary-color);
-  color: white;
+#humblebrag--form .form--box input {
   width: 50%;
-  height: 2rem;
 }
 
 #humblebrag--footer {

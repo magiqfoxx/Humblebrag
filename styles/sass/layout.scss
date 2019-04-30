@@ -312,7 +312,7 @@ h3 {
     min-width: 300px;
     max-width: 80vw;
     height: 60%;
-    width: 50%;
+    width: 30%;
     text-align: center;
 
     display: flex;
@@ -320,12 +320,19 @@ h3 {
     justify-content: center;
     align-items: center;
     input {
-      width: 7rem;
+      width: 50%;
       height: 1rem;
       margin: 1rem;
     }
+    .humblebrag--button {
+      background-color: var(--secondary-color);
+      color: white;
+      width: 50%;
+      height: 2rem;
+    }
   }
 }
+
 #humblebrag--footer {
   background-color: var(--primary-color);
   color: white;
