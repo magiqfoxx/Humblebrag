@@ -80,6 +80,10 @@ h3 {
       min-width: 300px;
       text-align: center;
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
       .slate--img {
         max-width: 80px;
       }
@@ -92,7 +96,7 @@ h3 {
       }
       .slate--button {
         width: 90%;
-        height: 19%;
+        height: 2rem;
         margin: 1rem 0rem;
         font-size: 1rem;
       }
@@ -157,7 +161,10 @@ h3 {
       height: 20rem;
       //to offset in regards to parent components
       position: relative;
-      top: -6rem;
+      top: -7rem;
+      @media (min-width: 530px) {
+        top: -6;
+      }
       .team--slate--img {
         margin: 1rem;
         width: calc(100% - 2rem);
@@ -235,7 +242,9 @@ h3 {
     max-width: 80vw;
     min-width: 300px;
     object-fit: cover;
-    height: 100%;
+    min-height: 300px;
+    max-height: 100vh;
+    height: max-content;
   }
   .testimonials--right {
     width: 50%;

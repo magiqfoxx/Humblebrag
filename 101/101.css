@@ -3,7 +3,7 @@
   --secondary-color: #d65a31;
   --dark-gray: #d8d8d8;
   --light-gray: rgb(242, 242, 242);
-  --shade: rgba(0, 0, 0, 0.7);
+  --shade: rgba(0, 0, 0, 0.8);
 }
 
 h2 {
@@ -27,6 +27,7 @@ h2 {
   text-align: center;
   z-index: 10;
   border-bottom: 1px solid black;
+  padding: 0.5rem 1rem;
 }
 
 #humblebrag--nav .nav--link:hover {
@@ -46,7 +47,12 @@ h2 {
 }
 
 .humblebrag--slate:hover .slate__hover {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slate__hover {
@@ -75,6 +81,7 @@ h2 {
   margin: 1rem;
   background-color: var(--secondary-color);
   color: white;
+  font-size: 0.8rem;
 }
 
 .testimonials--left {
@@ -93,7 +100,12 @@ h2 {
 }
 
 .testimonials--left:hover .testimonials--left__hover {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testimonials--left__hover {

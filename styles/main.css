@@ -100,6 +100,19 @@ h3 {
   text-align: center;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #humblebrag--slates .slates--wrapper .humblebrag--slate .slate--img {
@@ -117,7 +130,7 @@ h3 {
 
 #humblebrag--slates .slates--wrapper .humblebrag--slate .slate--button {
   width: 90%;
-  height: 19%;
+  height: 2rem;
   margin: 1rem 0rem;
   font-size: 1rem;
 }
@@ -211,7 +224,13 @@ h3 {
   width: 14rem;
   height: 20rem;
   position: relative;
-  top: -6rem;
+  top: -7rem;
+}
+
+@media (min-width: 530px) {
+  #humblebrag--team .team--wrapper .team--slate {
+    top: -6;
+  }
 }
 
 #humblebrag--team .team--wrapper .team--slate .team--slate--img {
@@ -329,7 +348,11 @@ h3 {
   min-width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  min-height: 300px;
+  max-height: 100vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 #humblebrag--testimonials .testimonials--right {
